@@ -21,7 +21,14 @@ class DataBase:
             self.cursor.close()
             self.conn.close()
 
-    def query(self, sql):
+    def query(self, sql, return_dict=False):
         self.cursor.execute(sql)
         self.conn.commit()
-        return self.cursor.fetchall()
+        results = self.cursor.fetchall()
+        if return_dict:
+            return self._query_to_dict(results, self.cursor.description)
+        return results
+
+    def _query_to_dict(self, results, description):
+        columns = [desc[0] for desc in description]
+        return [dict(zip(columns, row)) for row in results]
