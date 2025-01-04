@@ -1,6 +1,5 @@
-import json
 import argparse
-from flask import Flask, jsonify
+from flask import Flask
 from database import DataBase
 from sim_founder import SimFounder
 
@@ -19,8 +18,7 @@ args = parser.parse_args()
 @app.route("/vulnerabilities", methods=['GET'])
 def vulnerabilities():
     result = sim_founder.get_sims()
-    # return json.dumps(result, indent=4)
-    return jsonify(result)
+    return result
 
 
 if __name__ == '__main__':
