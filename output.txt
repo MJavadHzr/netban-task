@@ -36,7 +36,7 @@
     "id": 784,
     "sensor": "ToolD",
     "severity": "medium",
-    "tag": "group_19",
+    "tag": "group_17",
     "title": "Weak encryption in api encrypt"
   },
   {
@@ -56,7 +56,7 @@
     "id": 789,
     "sensor": "ToolB",
     "severity": "low",
-    "tag": "group_20",
+    "tag": "group_18",
     "title": "Missing HSTS policy"
   },
   {
@@ -66,7 +66,7 @@
     "id": 790,
     "sensor": "ToolC",
     "severity": "medium",
-    "tag": "group_17",
+    "tag": "group_5",
     "title": "Reflected XSS on user profile"
   },
   {
@@ -76,7 +76,7 @@
     "id": 791,
     "sensor": "ToolC",
     "severity": "high",
-    "tag": "group_18",
+    "tag": "group_7",
     "title": "Comments injection flaw"
   },
   {
@@ -146,7 +146,7 @@
     "id": 762,
     "sensor": "ToolA",
     "severity": "medium",
-    "tag": "group_17",
+    "tag": "group_5",
     "title": "XSS in user profile"
   },
   {
@@ -166,7 +166,7 @@
     "id": 764,
     "sensor": "ToolB",
     "severity": "high",
-    "tag": "group_17",
+    "tag": "group_5",
     "title": "Cross-Site Scripting in profile page"
   },
   {
@@ -176,7 +176,7 @@
     "id": 766,
     "sensor": "ToolB",
     "severity": "high",
-    "tag": "group_18",
+    "tag": "group_7",
     "title": "Comment injection in comments"
   },
   {
@@ -396,7 +396,7 @@
     "id": 798,
     "sensor": "ToolA",
     "severity": "medium",
-    "tag": "group_10",
+    "tag": "group_19",
     "title": "CRLF injection in /headers"
   },
   {
