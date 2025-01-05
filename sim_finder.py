@@ -3,7 +3,7 @@ from sql_queries import *
 from sentence_transformers import SentenceTransformer
 
 
-class SimFounder:
+class SimFinder:
     def __init__(self, database, model_name, threshold):
         self.db = database
         self.model = SentenceTransformer(f"sentence-transformers/{model_name}")

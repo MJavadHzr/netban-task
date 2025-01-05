@@ -1,7 +1,7 @@
 import argparse
 from flask import Flask
 from database import DataBase
-from sim_founder import SimFounder
+from sim_finder import SimFinder
 
 app = Flask(__name__)
 
