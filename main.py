@@ -17,7 +17,7 @@ args = parser.parse_args()
 
 @app.route("/vulnerabilities", methods=['GET'])
 def vulnerabilities():
-    result = sim_founder.get_sims()
+    result = sim_finder.get_sims()
     return result
 
 
@@ -27,6 +27,6 @@ if __name__ == '__main__':
         args.user,
         args.password
     )
-    sim_founder = SimFounder(db, args.model, args.threshold)
+    sim_finder = SimFinder(db, args.model, args.threshold)
 
     app.run(port=args.port, debug=False)
